@@ -1,0 +1,5 @@
+package agenda.service;
+
+public interface IContactosService {
+
+}

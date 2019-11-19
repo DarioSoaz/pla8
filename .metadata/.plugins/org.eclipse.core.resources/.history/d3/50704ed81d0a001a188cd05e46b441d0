@@ -1,0 +1,7 @@
+package agenda.service;
+
+
+@Service
+public class ContactosService implements IContactosService {
+
+}

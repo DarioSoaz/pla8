@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Tue Nov 19 11:46:34 CET 2019
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\Aula\\Desktop\\pla8\\Agenda\\WebContent\\WEB-INF\\lib\\spring-web-5.2.0.RELEASE-sources.jar=WEB-INF/lib/spring-web-5.2.0.RELEASE-sources.jar
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\Aula\\Desktop\\pla8\\Agenda\\WebContent\\WEB-INF\\lib\\spring-web-5.2.0.RELEASE.jar=WEB-INF/lib/spring-web-5.2.0.RELEASE.jar

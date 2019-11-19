@@ -1,0 +1,39 @@
+package agenda.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import agenda.service.ContactosService;
+import agenda.service.IContactosService;
+import agenda.entity.contactos;
+
+
+
+@Controller
+@RequestMapping("/agenda")
+public class AgendaController {
+	
+	@Autowired
+	
+	
+	@RequestMapping("/lista")
+	public String lista(Model modelo) {
+		
+		List<contactos> contactos=ContactosService.getContactos();
+
+		modelo.addAttribute("contactos",contactos);
+		
+		return "lista-contactos";
+	}
+	
+	@RequestMapping("/añadir")
+	public String añadirContacto(Model modelo) {
+		contactos contactos=new contactos();
+		modelo.addAttribute("contactos",contactos);		
+		return "formulario";
+	}
+}

@@ -1,0 +1,12 @@
+127.0.0.1 - - [19/Nov/2019:11:44:22 +0100] "GET / HTTP/1.1" 404 1002
+0:0:0:0:0:0:0:1 - - [19/Nov/2019:11:44:24 +0100] "GET /Agenda/ HTTP/1.1" 200 1038
+0:0:0:0:0:0:0:1 - - [19/Nov/2019:11:44:25 +0100] "GET /Agenda/resources/img/agenda-de-contactos.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [19/Nov/2019:11:44:40 +0100] "GET /Agenda/agenda/a%C3%B1adir HTTP/1.1" 200 1412
+0:0:0:0:0:0:0:1 - - [19/Nov/2019:11:44:43 +0100] "GET /Agenda/agenda/agenda HTTP/1.1" 404 975
+0:0:0:0:0:0:0:1 - - [19/Nov/2019:11:46:35 +0100] "GET /Agenda/agenda/a%C3%B1adir HTTP/1.1" 200 1412
+0:0:0:0:0:0:0:1 - - [19/Nov/2019:11:46:35 +0100] "GET /Agenda/resources/css/bootstrap.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [19/Nov/2019:11:46:35 +0100] "GET /Agenda/resources/js/bootstrap.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [19/Nov/2019:11:46:36 +0100] "GET /Agenda/agenda/agenda HTTP/1.1" 404 975
+0:0:0:0:0:0:0:1 - - [19/Nov/2019:11:46:53 +0100] "GET /Agenda/agenda/a%C3%B1adir HTTP/1.1" 200 1412
+0:0:0:0:0:0:0:1 - - [19/Nov/2019:11:46:53 +0100] "GET /Agenda/agenda/a%C3%B1adir HTTP/1.1" 200 1412
+0:0:0:0:0:0:0:1 - - [19/Nov/2019:11:46:56 +0100] "GET /Agenda/agenda/agenda HTTP/1.1" 200 1038

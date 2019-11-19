@@ -1,0 +1,32 @@
+package controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import DAO.IContactosDAO;
+import entity.contactos;
+
+
+
+@Controller
+@RequestMapping("agenda")
+public class AgendaController {
+	
+	@Autowired
+	
+private IContactosDAO ContactosDAO;
+	
+	@RequestMapping("lista")
+	public String lista(Model modelo) {
+		
+		List<contactos> contactos=ContactosDAO.getContactos();
+
+		modelo.addAttribute("contactos",contactos);
+		
+	return "lista-contactos";
+	}
+}
