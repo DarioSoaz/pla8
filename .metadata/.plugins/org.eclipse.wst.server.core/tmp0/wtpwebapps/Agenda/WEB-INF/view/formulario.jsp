@@ -19,7 +19,7 @@
 			</div>
 		
 			<form:form action="guardar" method="POST" modelAttribute="contactos">
-			
+				<form:hidden path="idcontactos"/>
 				<div class="form-group">
 					<label for="nombre" class="control-label">Nombre:</label><form:input class="form-control" path="nombre" id="nombre" />
 				</div>

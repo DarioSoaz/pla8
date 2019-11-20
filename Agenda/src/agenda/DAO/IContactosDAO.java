@@ -11,4 +11,9 @@ public interface IContactosDAO {
 	List<contactos> getContactos();
 	
 	void save(contactos contactos);
+	
+	contactos getContactos( int idcontactos);
+	
+	void delete(contactos idcontactos);
+
 }

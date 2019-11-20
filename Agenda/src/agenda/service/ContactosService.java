@@ -28,4 +28,15 @@ public class ContactosService implements IContactosService {
 		ContactosDAO.save(contactos);
 	}
 	
+	@Override
+	@Transactional
+	public contactos getContactos( int idcontactos) {
+		return ContactosDAO.getContactos(idcontactos);
+	}
+	
+	@Override
+	@Transactional
+	public void delete(contactos contactos) {
+		ContactosDAO.delete(contactos);
+	}
 }

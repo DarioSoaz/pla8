@@ -26,7 +26,19 @@ public class ContactosDAO implements IContactosDAO {
 	@Override
 	public void save(contactos contactos) {
 		Session miSesion=sessionFactory.getCurrentSession();
-		miSesion.save(contactos);
+		miSesion.saveOrUpdate(contactos);
+	}
+	
+	@Override
+	public contactos getContactos( int idcontactos) {
+		Session miSesion=sessionFactory.getCurrentSession();
+		return miSesion.get(contactos.class,idcontactos);
+	}
+	
+	@Override
+	public void delete(contactos contactos) {
+		Session miSesion=sessionFactory.getCurrentSession();
+		miSesion.delete(contactos);
 	}
 
 }
